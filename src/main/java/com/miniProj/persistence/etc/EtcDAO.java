@@ -1,4 +1,4 @@
-package com.miniProj.persistence;
+package com.miniProj.persistence.etc;
 
 public interface EtcDAO {
 	

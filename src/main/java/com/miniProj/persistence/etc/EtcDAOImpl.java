@@ -1,4 +1,4 @@
-package com.miniProj.persistence;
+package com.miniProj.persistence.etc;
 
 import javax.inject.Inject;
 

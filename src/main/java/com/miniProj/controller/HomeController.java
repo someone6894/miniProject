@@ -33,7 +33,12 @@ public class HomeController {
 		
 		model.addAttribute("serverTime", formattedDate );
 		
-		return "home";
+		return "index";
+	}
+	
+	@RequestMapping("/fileUpload")
+	public String fileUploadPageLoading() {
+		return "fileUploadEx";
 	}
 	
 }

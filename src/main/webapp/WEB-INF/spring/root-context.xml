@@ -12,20 +12,20 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
 	
 <!-- 	Connection 객체를 얻기 위한 DataSource 객체 설정 --> 
-<!-- 		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
-<!-- 			<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property> -->
-<!-- 			<property name="url" value="jdbc:mysql://127.0.0.1:3306/goot6?serverTimezone=Asia/Seoul"></property> -->
-<!-- 			<property name="username" value="root"></property> -->
-<!-- 			<property name="password" value="1234"></property> -->
-<!-- 		</bean> -->
-
-	<!-- Connection 객체를 얻기 위한 DataSource 객체 설정 -->
 		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-			<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property>
-			<property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/goot6?serverTimezone=Asia/Seoul"></property>
+			<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
+			<property name="url" value="jdbc:mysql://127.0.0.1:3306/goot6?serverTimezone=Asia/Seoul"></property>
 			<property name="username" value="root"></property>
 			<property name="password" value="1234"></property>
 		</bean>
+
+	<!-- Connection 객체를 얻기 위한 DataSource 객체 설정 -->
+<!-- 		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
+<!-- 			<property name="driverClassName" value="net.sf.log4jdbc.sql.jdbcapi.DriverSpy"></property> -->
+<!-- 			<property name="url" value="jdbc:log4jdbc:mysql://127.0.0.1:3306/goot6?serverTimezone=Asia/Seoul"></property> -->
+<!-- 			<property name="username" value="root"></property> -->
+<!-- 			<property name="password" value="1234"></property> -->
+<!-- 		</bean> -->
 		
 	<!-- Mybatis를 위한 SqlSessionFactory 객체 설정 -->
 	  <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
@@ -41,8 +41,8 @@
 	</bean>
 
 	<!-- DAO 클래스를 최신으로 업데이트 하도록 설정 -->
-	<context:component-scan base-package="com.webshjin.persistence" />
-	<context:component-scan base-package="com.webshjin.service" />
+	<context:component-scan base-package="com.miniProj.presistence.board" /> 
+	<context:component-scan base-package="com.miniProj.service.board" />
 
 
 

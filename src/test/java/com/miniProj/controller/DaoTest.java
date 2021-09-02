@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import com.miniProj.persistence.EtcDAO;
+import com.miniProj.persistence.etc.EtcDAO;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(  // root-context.xml 로딩하여 현재 클래스와 같이 실행하도록 하는 코드
